@@ -1,0 +1,15 @@
+app:
+  name: kendyala-poi-gateway-app
+  namespace: kendyala
+  cluster: .apps.rosa916.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rosa916-rvhvd/kendyala-gateway
+  org: rosa916-rvhvd
+  name: kendyala-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: kendyala/poi-gateway-app
+  tag: latest
